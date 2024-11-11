@@ -16,12 +16,6 @@ class EnvironmentVariablesValidator {
 
   @IsString()
   AUTH_REFRESH_TOKEN_EXPIRES_IN: string;
-
-  @IsString()
-  AUTH_FORGOT_SECRET: string;
-
-  @IsString()
-  AUTH_FORGOT_TOKEN_EXPIRES_IN: string;
 }
 
 export default registerAs<AuthConfig>('auth', () => {
